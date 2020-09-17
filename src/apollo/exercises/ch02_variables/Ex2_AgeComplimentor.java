@@ -20,6 +20,13 @@ public class Ex2_AgeComplimentor {
 		//   40?  You don't look a day over 35!
 		
 		// Bonus:  Try setting age in the same line that you declare it.
+		
+		
+		int age = 25;
+		int complimentaryAge = 20;
+		System.out.println(age + "?  You don't look a day over " 
+		+ complimentaryAge + "! ");
+		
 	}
 
 }

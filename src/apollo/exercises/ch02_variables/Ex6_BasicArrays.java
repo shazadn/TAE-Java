@@ -12,6 +12,15 @@ public class Ex6_BasicArrays {
 	    // Step 2: Set the value of each of the elements
 			
 		// Step 3: Print each of the 3 values to the console.
+		
+		int nums[] = new int[3];
+		nums[0] = 5;
+		nums[1] = 29;
+		nums[2] = 78;
+		
+		for(int x : nums) {
+			System.out.println(x);
+		}
 	}
 
 }
