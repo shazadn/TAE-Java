@@ -16,8 +16,15 @@ public class Ex2_SayMyName {
 		//
 		// Example output:
 		//  Hello Billy, it's good to meet you!
+		
+		sayMyName("Hello " + name1 + ", it's good to meet you!");
+		sayMyName("Hello " + name2 + ", it's good to meet you!");
+		sayMyName("Hello " + name3 + ", it's good to meet you!");
 	}
 	
+	public static void sayMyName(String message) {
+		System.out.println(message);
+	}
 	// Create a public static method called SayMyName
 	// that takes a single String parameter. SayMyName
 	// should print a customized message based on the

@@ -11,20 +11,30 @@ public class Ex4_ConvertTemp {
 		double tempFahrenheit = 78;
 		
 		double tempCelsius = 0;
-		// tempCelsius = fahrenheitToCelsius(tempFahrenheit);
 		
-		System.out.println("Temperature in fahrenheit: " + tempFahrenheit + " degrees");
-		System.out.println("Temperature in celsius: " + tempCelsius + " degrees");
+		tempCelsius = fahrenheitToCelsius(tempFahrenheit);
+		
+		System.out.println("Temperature in fahrenheit: " + (int)tempFahrenheit + " degrees");
+		System.out.println("Temperature in celsius: " + (int)tempCelsius + " degrees");
 		
 	}
+	
 	
 	// Create a method called fahrenheitToCelsius(double tempFahrenheit).
 	// This method should convert the temperature from Fahrenheit to
 	// Celsius and return the temperature in Celsius
     //
 	// HINT: 
-	//   ¡F to ¡C:	Deduct 32, then multiply by 5, then divide by 9
-	//   ¡C to ¡F:	Multiply by 9, then divide by 5, then add 32
+	//   ï¿½F to ï¿½C:	Deduct 32, then multiply by 5, then divide by 9
+	//   ï¿½C to ï¿½F:	Multiply by 9, then divide by 5, then add 32
+	
+	public static double fahrenheitToCelsius(double tempFahrenheit) {
+		
+		double tempCels = ((tempFahrenheit-32)*5)/9;
+		
+		return tempCels;
+		
+	}
 
 }
 

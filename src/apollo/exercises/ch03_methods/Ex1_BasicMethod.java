@@ -9,13 +9,20 @@ public class Ex1_BasicMethod {
 		
 		// Call the printBasicInfo method from the main method here
 		// Call the printBasicInfo method from the main method with different name and email
-
+		printBasicInfo("Shazad Nasim", "s.nasim@hotmail.co.uk");
+		
 	}
 	
+	public static void printBasicInfo(String name, String email) {
+		
+		String info = "Name: " + name + " | Email: " + email;
+		
+		System.out.println(info);
+	}
 	// Define a public static method called printBasicInfo which accepts a name and email.
     //
 	// printBasicInfo is a method that prints out a name and email.
-
+	
 }
 
 /*
