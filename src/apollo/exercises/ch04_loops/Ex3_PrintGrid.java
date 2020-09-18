@@ -15,7 +15,16 @@ public class Ex3_PrintGrid {
 		// all the possible coordinates in the board.
 		//
 		// Hint: loops can contain loops
+		printCoordinates(9,9);
 		
+	}
+	
+	public static void printCoordinates(int x, int y) {
+		for(int i=0; i <= x; i++) {
+			for(int j=0; j <= y; j++) {
+				System.out.println("(" + i + ", " + j + ")");
+			}
+		}
 	}
 
 }

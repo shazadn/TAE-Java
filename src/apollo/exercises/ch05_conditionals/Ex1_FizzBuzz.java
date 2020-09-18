@@ -3,39 +3,38 @@ package apollo.exercises.ch05_conditionals;
 public class Ex1_FizzBuzz {
 
 	// This is the main method that is executed as
-	// soon as the program starts.	
+	// soon as the program starts.
 	public static void main(String[] args) {
-	  // Call fizzBuzz method and verify correct output	
+		// Call fizzBuzz method and verify correct output
+
+		fizzBuzz();
 	}
-	
-	// Write a method that prints the numbers from 1 to 100. 
-    // But for multiples of three print ÒFizzÓ instead of the number,
-	// and for the multiples of five print ÒBuzzÓ. For numbers which 
-	// are multiples of both three and five print ÒFizzBuzzÓ."
+
+	// Write a method that prints the numbers from 1 to 100.
+	// But for multiples of three print ï¿½Fizzï¿½ instead of the number,
+	// and for the multiples of five print ï¿½Buzzï¿½. For numbers which
+	// are multiples of both three and five print ï¿½FizzBuzzï¿½."
+
+	public static void fizzBuzz() {
+		for (int i = 0; i <= 100; i++) {
+			if (((i % 3) == 0) && ((i % 5) == 0)) {
+				System.out.println("FizzBuzz");
+			} else if ((i % 3) == 0) {
+				System.out.println("Fizz");
+			} else if ((i % 5) == 0) {
+				System.out.println("Buzz");
+			} else {
+				System.out.println(i);
+			}
+		}
+	}
 
 }
 
 /*
  * SAMPLE OUTPUT:
- *  
- * 1
- * 2
- * Fizz
- * 4
- * Buzz
- * Fizz
- * 7
- * 8
- * Fizz
- * Buzz
- * 11
- * Fizz
- * 13
- * 14
+ * 
+ * 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz ... 98 Fizz
  * FizzBuzz
- * ...
- * 98
- * Fizz
- * FizzBuzz
- *  
+ * 
  */

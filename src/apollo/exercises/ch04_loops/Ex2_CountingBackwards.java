@@ -9,6 +9,9 @@ public class Ex2_CountingBackwards {
 		
 		// Print out the numbers 100, 99, 98, ..., 3, 2, 1
 		// Use a for loop.
+		for(int i=100; i>=1; i--) {
+			System.out.println(i);
+		}
 		
 	}
 
