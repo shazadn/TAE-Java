@@ -7,7 +7,7 @@ public class Ex3_NamesAndAddresses {
 	// This is the main method that is executed as
 	// soon as the program starts.
 	public static void main(String[] args) {
-		
+
 		// Create a method called printAddress(HashMap book, String name)
 		//
 		// HashMap book = new HashMap();
@@ -16,7 +16,18 @@ public class Ex3_NamesAndAddresses {
 		// map.put("Joe", "45 King Street, SF, CA 94158");
 		//
 		// printAddress(book, "Mike");
-		
+
+		HashMap book = new HashMap();
+		book.put("Mike", "123 2nd Street, SF, CA 94105");
+		book.put("Bob", "333 Folsom Street, SF, CA 94107");
+		book.put("Joe", "45 King Street, SF, CA 94158");
+
+		printAddress(book, "Joe");
+
 	}
 
+	public static void printAddress(HashMap book, String name) {
+		System.out.println(book.get(name));
+
+	}
 }
